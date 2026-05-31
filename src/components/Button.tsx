@@ -1,3 +1,4 @@
+import '../styles/button.css'
 //Interfaz de las propiedades del botón
 interface ButtonProps {
     label: string

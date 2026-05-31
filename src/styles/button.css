@@ -1,0 +1,40 @@
+button {
+    flex: 1;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 1.2rem;
+    transition: transform 0.1s;
+    box-shadow: 0 4px 0 rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.3);
+}
+
+.btn-number {
+    background: #3a3a3a;
+    color: white;
+}
+
+.btn-operator {
+    background: #ff7700;
+    color: white;
+}
+
+.btn-equals {
+    background: #ffd700;
+    color: #2a2a2a;
+}
+
+.btn-clear {
+    background: #cc2233;
+    color: white;
+}
