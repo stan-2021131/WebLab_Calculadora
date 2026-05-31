@@ -6,13 +6,14 @@ interface Props {
     row: string[]
     pressDigit: (digit: string) => void
     pressOperator: (operator: Operation) => void
-    pressEquals: () => void
+    pressEquals: () => void 
+    pressDecimal: () => void
 }
 export const KeypadRow = (props: Props) => (
     <div className='keypad-row'>
-        {props.row.map((label) => (
-            <KeypadButton key={label} label={label} className={getButtonClass(label)}
-                onClick={() => handlePress(label, props.pressDigit, props.pressOperator, props.pressEquals)}
+        {props.row.map((label) => ( <KeypadButton key={label} label={label} className={getButtonClass(label)}
+                onClick={() => handlePress(label, props.pressDigit, props.pressOperator, 
+                    props.pressEquals, props.pressDecimal)}
             />
         ))}
     </div>

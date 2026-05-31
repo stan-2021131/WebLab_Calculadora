@@ -6,6 +6,7 @@ interface Props {
     pressDigit: (digit: string) => void
     pressOperator: (operator: Operation) => void
     pressEquals: () => void
+    pressDecimal: () => void
 }
 export const Keypad = (props: Props) => (
     <div className='keypad'>

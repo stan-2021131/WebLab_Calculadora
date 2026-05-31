@@ -56,10 +56,30 @@ export const useCalculator = () => {
         setWaitingForOperand(true) //Se actualiza el estado de espera
     }
 
+    //Función para punto decimal
+    const pressDecimal = () => {
+        if (waitingForOperand) {
+            setDisplayValue('0.')
+            setWaitingForOperand(false)
+            return
+        }
+
+        if (displayValue.includes('.')) {
+            return
+        }
+
+        if (!canAppendDigit(displayValue)) {
+            return
+        }
+
+        setDisplayValue((prev) => `${prev}.`)
+    }
+
     return {
         displayValue,
         pressDigit,
         pressOperator,
-        pressEquals
+        pressEquals,
+        pressDecimal
     }
 }
