@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import type { Operation } from '../types/operators'
-import { canAppendDigit } from '../utils/validations'
+import { canAppendDigit } from '../utils/validations/validations'
 import { calculate } from '../utils/calculate/calculate'
 
 export const useCalculator = () => {

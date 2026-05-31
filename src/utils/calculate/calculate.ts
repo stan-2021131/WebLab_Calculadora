@@ -1,5 +1,5 @@
 import type { Operation } from '../../types/operators'
-import {validateResult} from '../validations'
+import {validateResult} from '../validations/validations'
 
 export const calculate = (
     left: string,
