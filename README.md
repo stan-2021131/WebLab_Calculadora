@@ -2,6 +2,11 @@
 
 Calculadora simple desarrollada con React, TypeScript y Vite, utilizando Bun como package manager.
 
+## Página en producción
+
+La página se encuentra desplegada en el siguiente enlace:
+https://calculadora.sergiotan.online/
+
 ## Características
 
 - ✅ Operaciones: suma, resta, multiplicación, división y módulo
