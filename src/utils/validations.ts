@@ -10,5 +10,16 @@ export const validateResult = (value: number): string => {
         return 'ERROR'
     }
 
-    return value.toString()
+    return formatResult(value)
+}
+
+//Función para formatear el resultado
+const formatResult = (value: number): string => {
+    const result = value.toString()
+
+    if (result.length <= 9) {
+        return result
+    }
+
+    return result.slice(0, 9)
 }

@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import type { Operation } from '../types/operators'
 import { canAppendDigit } from '../utils/validations'
-import { calculate } from '../utils/calculate'
+import { calculate } from '../utils/calculate/calculate'
 
 export const useCalculator = () => {
     //Estados iniciales de la calculadora
